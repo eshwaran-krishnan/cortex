@@ -28,7 +28,7 @@
     "start": "mcp-use start",
     "deploy": "mcp-use deploy",
     "tunnel": "mcp-use start --tunnel",
-    "postinstall": "mcp-use generate-types"
+    "postinstall": "[ -f index.ts ] && mcp-use generate-types || true"
   },
   "dependencies": {
     "@openai/apps-sdk-ui": "^0.2.1",
